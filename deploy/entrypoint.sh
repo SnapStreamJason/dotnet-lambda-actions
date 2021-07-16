@@ -12,7 +12,7 @@ aws lambda update-function-code \
   --region $AWS_REGION \
   --function-name $DOTNET_LAMBDA_FUNCTION_NAME \
   --zip-file fileb://$DOTNET_LAMBDA_PACKAGE_NAME
-echo dotnet lambda deploy-function \
+dotnet lambda deploy-function \
   --cfg $DOTNET_LAMBDA_CONFIG_FILE \
   --region $AWS_REGION \
   --function-name $DOTNET_LAMBDA_FUNCTION_NAME \
