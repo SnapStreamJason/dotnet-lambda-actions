@@ -24,7 +24,7 @@ jobs:
         dotnet-version: 2.1.500
 
     - name: .NET Lambda build and deploy
-      uses: evalytica/dotnet-lambda-actions/deploy@v0.1.0
+      uses: snapstreamjason/dotnet-lambda-actions/deploy@v0.1.0
       env:
         AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
         AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -34,6 +34,7 @@ jobs:
         DOTNET_LAMBDA_FUNCTION_NAME: my-lambda-function-name
         DOTNET_LAMBDA_S3_LOCATION: my-lambda-builds-bucket/my-lambda-function-name
         DOTNET_LAMBDA_WORKING_DIR: ./src
+        DOTNET_LAMBDA_CONFIG_FILE: aws-lambda-defaults.staging.json
 ```
 
 ## Actions
