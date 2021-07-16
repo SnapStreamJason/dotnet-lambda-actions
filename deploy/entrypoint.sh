@@ -1,7 +1,6 @@
 #!/bin/sh
 : ${AWS_REGION:=us-east-1}
 : ${DOTNET_LAMBDA_PACKAGE_NAME:=latest.zip}
-: ${DOTNET_LAMBDA_CONFIG_FILE :=aws-lambda-tools-defaults.json}
 
 set -x
 
